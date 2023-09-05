@@ -5,7 +5,7 @@ namespace ApiEstudiantes.Data
     public class Estudiantes
     {
         private List<Estudiante> estudiantes = new List<Estudiante>();
-        public async Task<List<Estudiante>> MostrarEstudiantes()
+        public List<Estudiante> MostrarEstudiantes()
         {
             var estudiante1 = new Estudiante();
             estudiante1.id = 1;
