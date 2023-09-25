@@ -6,12 +6,14 @@ using ApiEstudiantes.Data;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Routing;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace ApiEstudiantes.Controllers
 {
     [ApiController]
     [Route("api/estudiantes")]
+    [Authorize]
     public class estudiantesController : ControllerBase
     {
         //Variable de la clase
